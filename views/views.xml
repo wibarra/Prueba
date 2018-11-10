@@ -1,0 +1,59 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <!--
+    <record model="ir.ui.view" id="prueba_qs.list">
+      <field name="name">prueba_qs list</field>
+      <field name="model">prueba_qs.prueba_qs</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+    -->
+
+    <!-- actions opening views on models -->
+    <!--
+    <record model="ir.actions.act_window" id="prueba_qs.action_window">
+      <field name="name">prueba_qs window</field>
+      <field name="res_model">prueba_qs.prueba_qs</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    -->
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="prueba_qs.action_server">
+      <field name="name">prueba_qs server</field>
+      <field name="model_id" ref="model_prueba_qs_prueba_qs"/>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+
+    <!-- Top menu item -->
+    <!--
+    <menuitem name="prueba_qs" id="prueba_qs.menu_root"/>
+    -->
+    <!-- menu categories -->
+    <!--
+    <menuitem name="Menu 1" id="prueba_qs.menu_1" parent="prueba_qs.menu_root"/>
+    <menuitem name="Menu 2" id="prueba_qs.menu_2" parent="prueba_qs.menu_root"/>
+    -->
+    <!-- actions -->
+    <!--
+    <menuitem name="List" id="prueba_qs.menu_1_list" parent="prueba_qs.menu_1"
+              action="prueba_qs.action_window"/>
+    <menuitem name="Server to list" id="prueba_qs" parent="prueba_qs.menu_2"
+              action="prueba_qs.action_server"/>
+    -->
+  </data>
+</odoo>
